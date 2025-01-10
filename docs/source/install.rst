@@ -16,7 +16,7 @@ Information for all platforms
 While |NUMBAT| is developed on Linux, it can also be built natively on both MacOS and Windows.
 The Linux builds can also be run under virtual machines on MacOS and Windows if desired.
 
-In all cases, the current source code for |NUMBAT| is hosted `here on Github <https://github.com/michaeljsteel/|NUMBAT|>`_. Please always download the latest release from the github page.
+In all cases, the current source code for |NUMBAT| is hosted `here on Github <https://github.com/michaeljsteel/NUMBAT>`_. Please always download the latest release from the github page.
 
 
 Install locations
@@ -99,9 +99,7 @@ Required libraries
 #. If you using the Intel OneAPI math libraries, you should add the library path
    ``/opt/intel/oneapi/<release>/lib`` to your ``LD_LIBRARY_PATH`` variable in one of your shell startup files (eg. ``~/.bashrc``).  Replace ``<release>`` with the correct string ``2024.1`` or similar depending on your installed version of OneAPI.
 
-
-
-Building |NUMBAT| itself
+# If you encounter an error like "fatal errror: umfpack.h No such file or directory", please make sure to add ``CPPFLAGS="-I/usr/include/suitesparse"`` to your shell startup files (e.g. ``~/.bashrc``). This makes sure that the SuiteSparse library that was previously installed can be included.
 --------------------------
 
 #. Create a python virtual environment for working with |NUMBAT|.
